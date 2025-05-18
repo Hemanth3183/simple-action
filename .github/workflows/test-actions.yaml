@@ -1,0 +1,11 @@
+name: Sample first action
+on: [push, workflow_dispatch]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo command
+        run: echo "Hello, world!"
+
+
