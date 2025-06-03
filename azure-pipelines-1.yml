@@ -12,11 +12,13 @@ pool:
 stages:
   - stage: "Dummy"
     displayName: "Dummy"
-    
     jobs:
     - job: "Dummy"
       displayName: "Dummy"
       steps:
+      - checkout: none
       - script: echo "Hello World!"
+    - job: "Dummy2"
+      steps:
       - task: Npm@1
-        displayName: "Install npm"
+      displayName: "Install npm"
