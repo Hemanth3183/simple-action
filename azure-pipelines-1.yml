@@ -9,23 +9,29 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-stages:
-  - stage: "Dummy"
-    displayName: "Dummy"
-    jobs:
-    - job: "Dummy"
-      displayName: "What's up!"
-      steps:
-      - checkout: none
-      - script: echo "Hello World!"
-    # - job: "Dummy2"
-    #   steps:
-    #   - task: Npm@1
-    #   displayName: "Install npm"
+steps:
+  - script: |
+      echo "Hello World!"
+      echo "How's it going?"
+      echo "Great job!!!"
+
+# stages:
+#   - stage: "Dummy"
+#     displayName: "Dummy"
+#     jobs:
+#     - job: "Dummy"
+#       displayName: "What's up!"
+#       steps:
+#       - checkout: none
+#       - script: echo "Hello World!"
+#     # - job: "Dummy2"
+#     #   steps:
+#     #   - task: Npm@1
+#     #   displayName: "Install npm"
   
-  - stage: "Dummy2"
-    jobs:
-    - job: "Dummy2"
-      displayName: "Nothing much"
-      steps:
-        - script: echo "What's going on!!! "
+#   - stage: "Dummy2"
+#     jobs:
+#     - job: "Dummy2"
+#       displayName: "Nothing much"
+#       steps:
+#         - script: echo "What's going on!!! "
