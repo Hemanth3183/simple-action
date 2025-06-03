@@ -14,7 +14,7 @@ stages:
     displayName: "Dummy"
     jobs:
     - job: "Dummy"
-      displayName: "Dummy"
+      displayName: "What's up!"
       steps:
       - checkout: none
       - script: echo "Hello World!"
