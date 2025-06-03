@@ -13,8 +13,10 @@ stages:
   - stage: "Dummy"
     displayName: "Dummy"
     
-    jobs:    
-      - job: "Dummy"
-        displayName: "Dummy"
-        steps:
-          - script: echo "Hello World!"
+    jobs:
+    - job: "Dummy"
+      displayName: "Dummy"
+      steps:
+      - script: echo "Hello World!"
+      - task: Npm@1
+        displayName: "Install npm"
