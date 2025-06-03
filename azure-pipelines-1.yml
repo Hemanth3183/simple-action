@@ -10,11 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - checkout: none
   - script: |
       echo "Hello World!"
       echo "How's it going?"
       echo "Great job!!!"
+    displayName: "Multi-line scripts execution"
 
 # stages:
 #   - stage: "Dummy"
